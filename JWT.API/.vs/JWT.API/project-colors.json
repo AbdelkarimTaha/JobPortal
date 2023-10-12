@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8bf879c5-83e6-45a2-a97a-b29b2c99fe15": {
+      "ProjectGuid": "8bf879c5-83e6-45a2-a97a-b29b2c99fe15",
+      "DisplayName": "JWT.API",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

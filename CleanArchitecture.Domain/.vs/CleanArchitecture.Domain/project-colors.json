@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f5a505cb-ecbf-467a-b572-2e1eba673492": {
+      "ProjectGuid": "f5a505cb-ecbf-467a-b572-2e1eba673492",
+      "DisplayName": "CleanArchitecture.Domain",
+      "ColorIndex": 0
+    },
+    "d175ca87-a1f6-4b95-af4e-4c7adac917c3": {
+      "ProjectGuid": "d175ca87-a1f6-4b95-af4e-4c7adac917c3",
+      "DisplayName": "CleanArchitecture.Application",
+      "ColorIndex": 1
+    },
+    "84c6cfee-b632-4816-b536-61d0beee09b5": {
+      "ProjectGuid": "84c6cfee-b632-4816-b536-61d0beee09b5",
+      "DisplayName": "CleanArchitecture.Infrastructure",
+      "ColorIndex": 2
+    },
+    "bbb635e0-2543-4972-a667-effac5d8c78a": {
+      "ProjectGuid": "bbb635e0-2543-4972-a667-effac5d8c78a",
+      "DisplayName": "CleanArchitecture.API",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
