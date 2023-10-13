@@ -1,131 +1,19 @@
 ﻿++Solution 'CleanArchitecture.Domain' ‎(4 of 4 projects)
 i:{00000000-0000-0000-0000-000000000000}:CleanArchitecture.Domain.sln
-++CleanArchitecture.Domain
-i:{00000000-0000-0000-0000-000000000000}:CleanArchitecture.Domain
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.domain\cleanarchitecture.domain.csproj
-++Dependencies
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:>270
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:>268
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>269
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>549
-++IRepositories
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\
-++IMovieRepository.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\imovierepository.cs
-++Models
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\models\
-++Analyzers
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:analyzers
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:analyzers
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:analyzers
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:analyzers
-++Frameworks
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:frameworks
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:frameworks
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:frameworks
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:frameworks
-++Member.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\models\member.cs
-++Movie.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\models\movie.cs
-++MovieRental.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\models\movierental.cs
-++Rental.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\models\rental.cs
-++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-++Microsoft.CodeAnalysis.NetAnalyzers
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-++System.Text.Json.SourceGeneration
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.22\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.22\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\users\karem taha\.nuget\packages\system.text.json\7.0.0\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\users\karem taha\.nuget\packages\system.text.json\7.0.0\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
-++Microsoft.NETCore.App
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\microsoft.netcore.app
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\microsoft.netcore.app
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\microsoft.netcore.app
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\microsoft.netcore.app
-++CleanArchitecture.Application
-i:{00000000-0000-0000-0000-000000000000}:CleanArchitecture.Application
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.application\cleanarchitecture.application.csproj
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.application\cleanarchitecture.application.csproj
-++IServices
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\iservices\
-++IMovieService.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\iservices\imovieservice.cs
-++Services
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\services\
-++MovieService.cs
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\services\movieservice.cs
-++Projects
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:projects
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:projects
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:projects
-++CleanArchitecture.Infrastructure
-i:{00000000-0000-0000-0000-000000000000}:CleanArchitecture.Infrastructure
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\cleanarchitecture.infrastructure.csproj
-++Migrations
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\migrations\
-++Repository
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\repository\
-++MovieRepository.cs
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\repository\movierepository.cs
-++DBContext.cs
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\dbcontext.cs
-++Packages
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:packages
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:packages
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:packages
-++20230807045103_AddDB.cs
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\migrations\20230807045103_adddb.cs
-++DBContextModelSnapshot.cs
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\migrations\dbcontextmodelsnapshot.cs
-++Microsoft.EntityFrameworkCore.Analyzers
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\users\karem taha\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.9\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\users\karem taha\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.9\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
-++Microsoft.Extensions.Logging.Generators
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\users\karem taha\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\users\karem taha\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
-++Microsoft.EntityFrameworkCore (7.0.9)
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>576
-++Microsoft.EntityFrameworkCore.Design (7.0.9)
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>581
-++Microsoft.EntityFrameworkCore.SqlServer (7.0.9)
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>578
-++Microsoft.EntityFrameworkCore.Tools (7.0.9)
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>583
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>582
-++20230807045103_AddDB.Designer.cs
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\migrations\20230807045103_adddb.designer.cs
 ++CleanArchitecture.API
 i:{00000000-0000-0000-0000-000000000000}:CleanArchitecture.API
 ++Connected Services 
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>550
-++Properties
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\properties\
-++Controllers
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\controllers\
-++MovieController.cs
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\controllers\moviecontroller.cs
-++appsettings.json
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\appsettings.json
-++Program.cs
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\program.cs
-++WeatherForecast.cs
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\weatherforecast.cs
-++No service dependencies discovered
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>551
-++launchSettings.json
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\properties\launchsettings.json
-++appsettings.Development.json
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\appsettings.development.json
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>590
+++Dependencies
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>589
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>299
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:>300
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:>298
+++Analyzers
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:analyzers
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:analyzers
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:analyzers
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:analyzers
 ++Microsoft.AspNetCore.Analyzers
 i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
 ++Microsoft.AspNetCore.App.Analyzers
@@ -138,288 +26,196 @@ i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\program files\dotnet\sdk\6.0.317\sdk
 i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
 ++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
 i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\users\karem taha\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.9\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\users\karem taha\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.9\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\users\karem taha\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\users\karem taha\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:c:\users\karem taha\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:c:\users\karem taha\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 ++Microsoft.NET.Sdk.Razor.SourceGenerators
 i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\program files\dotnet\sdk\6.0.317\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:c:\users\karem taha\.nuget\packages\system.text.json\7.0.0\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:c:\users\karem taha\.nuget\packages\system.text.json\7.0.0\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.22\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.22\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Frameworks
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:frameworks
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:frameworks
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:frameworks
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:frameworks
 ++Microsoft.AspNetCore.App
 i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\microsoft.netcore.app
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\microsoft.netcore.app
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\microsoft.netcore.app
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\microsoft.netcore.app
+++Packages
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:packages
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:packages
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:packages
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:packages
+++Microsoft.EntityFrameworkCore.Tools (7.0.9)
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>632
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>615
 ++Swashbuckle.AspNetCore (6.5.0)
-i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>580
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>631
+++Projects
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:projects
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:projects
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:projects
+++CleanArchitecture.Application
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.application\cleanarchitecture.application.csproj
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.application\cleanarchitecture.application.csproj
+i:{00000000-0000-0000-0000-000000000000}:CleanArchitecture.Application
+++CleanArchitecture.Infrastructure
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\cleanarchitecture.infrastructure.csproj
+i:{00000000-0000-0000-0000-000000000000}:CleanArchitecture.Infrastructure
+++Properties
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\properties\
+++launchSettings.json
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\properties\launchsettings.json
+++Controllers
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\controllers\
 ++AccountController.cs
 i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\controllers\accountcontroller.cs
-++IAccountService.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\iservices\iaccountservice.cs
-++NewFolder
-++DTOs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\dtos\
-++bin
-++Debug
-++net6.0
-++ref
-++runtimes
-++Azure.Core.dll
-++Azure.Identity.dll
-++CleanArchitecture.API.deps.json
-++CleanArchitecture.API.dll
-++CleanArchitecture.API.exe
-++CleanArchitecture.API.pdb
-++CleanArchitecture.API.runtimeconfig.json
-++CleanArchitecture.Application.dll
-++CleanArchitecture.Application.pdb
-++CleanArchitecture.Domain.dll
-++CleanArchitecture.Domain.pdb
-++CleanArchitecture.Infrastructure.dll
-++CleanArchitecture.Infrastructure.pdb
-++Humanizer.dll
-++Microsoft.Bcl.AsyncInterfaces.dll
-++Microsoft.Data.SqlClient.dll
-++Microsoft.EntityFrameworkCore.Abstractions.dll
-++Microsoft.EntityFrameworkCore.Design.dll
-++Microsoft.EntityFrameworkCore.dll
-++Microsoft.EntityFrameworkCore.Relational.dll
-++Microsoft.EntityFrameworkCore.SqlServer.dll
-++Microsoft.Extensions.Caching.Abstractions.dll
-++Microsoft.Extensions.Caching.Memory.dll
-++Microsoft.Extensions.Configuration.Abstractions.dll
-++Microsoft.Extensions.DependencyInjection.Abstractions.dll
-++Microsoft.Extensions.DependencyInjection.dll
-++Microsoft.Extensions.DependencyModel.dll
-++Microsoft.Extensions.Logging.Abstractions.dll
-++Microsoft.Extensions.Logging.dll
-++Microsoft.Extensions.Options.dll
-++Microsoft.Extensions.Primitives.dll
-++Microsoft.Identity.Client.dll
-++Microsoft.Identity.Client.Extensions.Msal.dll
-++Microsoft.IdentityModel.Abstractions.dll
-++Microsoft.IdentityModel.JsonWebTokens.dll
-++Microsoft.IdentityModel.Logging.dll
-++Microsoft.IdentityModel.Protocols.dll
-++Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-++Microsoft.IdentityModel.Tokens.dll
-++Microsoft.OpenApi.dll
-++Microsoft.SqlServer.Server.dll
-++Microsoft.Win32.SystemEvents.dll
-++Mono.TextTemplating.dll
-++Swashbuckle.AspNetCore.Swagger.dll
-++Swashbuckle.AspNetCore.SwaggerGen.dll
-++Swashbuckle.AspNetCore.SwaggerUI.dll
-++System.CodeDom.dll
-++System.Configuration.ConfigurationManager.dll
-++System.Drawing.Common.dll
-++System.IdentityModel.Tokens.Jwt.dll
-++System.Memory.Data.dll
-++System.Runtime.Caching.dll
-++System.Security.Cryptography.ProtectedData.dll
-++System.Security.Permissions.dll
-++System.Text.Encodings.Web.dll
-++System.Text.Json.dll
-++System.Windows.Extensions.dll
-++browser
-++unix
-++win
-++win-arm
-++win-arm64
-++win-x64
-++win-x86
-++lib
-++native
-++netcoreapp3.0
-++netcoreapp3.1
-++netstandard2.0
-++Microsoft.Data.SqlClient.SNI.dll
-++obj
-++CleanArchitecture.API.csproj.nuget.dgspec.json
-++CleanArchitecture.API.csproj.nuget.g.props
-++CleanArchitecture.API.csproj.nuget.g.targets
-++project.assets.json
-++project.nuget.cache
-++staticwebassets.pack.sentinel
-++staticwebassets
-++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
-++apphost.exe
-++CleanArchitecture.API.AssemblyInfo.cs
-++CleanArchitecture.API.AssemblyInfoInputs.cache
-++CleanArchitecture.API.assets.cache
-++CleanArchitecture.API.csproj.AssemblyReference.cache
-++CleanArchitecture.API.csproj.CopyComplete
-++CleanArchitecture.API.csproj.CoreCompileInputs.cache
-++CleanArchitecture.API.csproj.FileListAbsolute.txt
-++CleanArchitecture.API.GeneratedMSBuildEditorConfig.editorconfig
-++CleanArchitecture.API.genruntimeconfig.cache
-++CleanArchitecture.API.GlobalUsings.g.cs
-++CleanArchitecture.API.MvcApplicationPartsAssemblyInfo.cache
-++CleanArchitecture.API.MvcApplicationPartsAssemblyInfo.cs
-++staticwebassets.build.json
-++Imports
-++Sdk.props
-++Sdk.targets
-++Sdk.props (C:\Program Files\dotnet\sdk\6.0.317\Sdks\Microsoft.NET.Sdk\Sdk)
-++Sdk.props (C:\Program Files\dotnet\sdk\6.0.317\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
-++Sdk.props (C:\Program Files\dotnet\sdk\6.0.317\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
-++Sdk.props (C:\Program Files\dotnet\sdk\6.0.317\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
-++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.317\Sdks\Microsoft.NET.Sdk\Sdk)
-++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.317\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
-++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.317\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
-++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.317\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
-++Microsoft.Common.props
-++Microsoft.NET.Sdk.props
-++Sdk.Razor.CurrentVersion.props
-++Microsoft.NET.Sdk.Web.ProjectSystem.props
-++Microsoft.NET.Sdk.Publish.props
-++Microsoft.NET.Sdk.BeforeCommon.targets
-++Microsoft.CSharp.targets
-++Microsoft.NET.Sdk.targets
-++Microsoft.NET.Compatibility.targets
-++NuGet.Build.Tasks.Pack.targets
-++Sdk.Razor.CurrentVersion.targets
-++Microsoft.NET.Sdk.Web.ProjectSystem.targets
-++Microsoft.NET.Sdk.Publish.targets
-++Microsoft.NuGet.ImportBefore.props
-++NuGet.props
-++Microsoft.NET.Sdk.DefaultItems.props
-++Microsoft.NET.Sdk.ImportWorkloads.props
-++Microsoft.NET.SupportedTargetFrameworks.props
-++Microsoft.NET.SupportedPlatforms.props
-++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
-++Microsoft.NET.Sdk.CSharp.props
-++Microsoft.NET.ILLink.props
-++Microsoft.NET.Compatibility.props
-++Microsoft.NET.PackTool.props
-++Microsoft.NET.PackProjectTool.props
-++Microsoft.NET.Sdk.WindowsDesktop.props
-++Microsoft.NET.Windows.props
-++Sdk.Razor.StaticAssets.ProjectSystem.props
-++Microsoft.TypeScript.Default.props
-++Microsoft.NET.Sdk.Web.DefaultItems.props
-++Microsoft.NET.DefaultAssemblyInfo.targets
-++Microsoft.NET.DefaultOutputPaths.targets
-++Microsoft.NET.Sdk.ImportPublishProfile.targets
-++Microsoft.NET.TargetFrameworkInference.targets
-++Microsoft.NET.Sdk.Razor.BeforeCommon.targets
-++Microsoft.NET.Sdk.ImportWorkloads.targets
-++Microsoft.NET.RuntimeIdentifierInference.targets
-++Microsoft.NET.EolTargetFrameworks.targets
-++Microsoft.NET.NuGetOfflineCache.targets
-++Microsoft.Managed.Before.targets
-++Microsoft.CSharp.CurrentVersion.targets
-++Microsoft.Managed.After.targets
-++Microsoft.NET.Sdk.Common.targets
-++Microsoft.PackageDependencyResolution.targets
-++Microsoft.NET.Sdk.DefaultItems.targets
-++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
-++Microsoft.NET.Sdk.Shared.targets
-++Microsoft.NET.DisableStandardFrameworkResolution.targets
-++Microsoft.NET.DesignerSupport.targets
-++Microsoft.NET.GenerateAssemblyInfo.targets
-++Microsoft.NET.GenerateGlobalUsings.targets
-++Microsoft.NET.GenerateSupportedRuntime.targets
-++Microsoft.NET.ComposeStore.targets
-++Microsoft.NET.CrossGen.targets
-++Microsoft.NET.ObsoleteReferences.targets
-++Microsoft.NET.Publish.targets
-++Microsoft.NET.PackTool.targets
-++Microsoft.NET.PackProjectTool.targets
-++Microsoft.NET.PreserveCompilationContext.targets
-++Microsoft.NET.ConflictResolution.targets
-++Microsoft.NET.Sdk.CSharp.targets
-++Microsoft.NET.ILLink.targets
-++Microsoft.NET.Sdk.Analyzers.targets
-++Microsoft.NET.Compatibility.Common.targets
-++Microsoft.NET.Sdk.Razor.Configuration.targets
-++Microsoft.NET.Sdk.Razor.CodeGeneration.targets
-++Microsoft.NET.Sdk.Razor.SourceGenerators.targets
-++Microsoft.NET.Sdk.Razor.StaticWebAssets.targets
-++Microsoft.NET.Sdk.Razor.ScopedCss.targets
-++Microsoft.NET.Sdk.Razor.JSModules.targets
-++Microsoft.NET.Sdk.Razor.GenerateAssemblyInfo.targets
-++Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets
-++Microsoft.NET.Sdk.Razor.DesignTime.targets
-++Microsoft.TypeScript.targets
-++Microsoft.TypeScript.DotNetCore.targets
-++Microsoft.Web.Designtime.targets
-++Default.pubxml
-++Microsoft.NET.Sdk.Publish.ComputeFiles.targets
-++Microsoft.NET.Sdk.Publish.FilterFiles.targets
-++Microsoft.NET.Sdk.Publish.CopyFiles.targets
-++Microsoft.NET.Sdk.Publish.TransformFiles.targets
-++Microsoft.NET.Sdk.Publish.FileSystem.targets
-++Microsoft.NET.Sdk.DotNetCLITool.targets
-++Microsoft.Extensions.ApiDescription.Server.props
-++Swashbuckle.AspNetCore.props
-++Microsoft.EntityFrameworkCore.props
-++Microsoft.EntityFrameworkCore.Design.props
-++Microsoft.NuGet.props
-++Microsoft.NETCoreSdk.BundledVersions.props
-++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
-++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
-++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.android)
-++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.ios)
-++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.maccatalyst)
-++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.macos)
-++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.maui)
-++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.tvos)
-++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.workload.emscripten)
-++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.workload.mono.toolchain)
-++Microsoft.CSharp.Core.targets
-++Microsoft.CSharp.DesignTime.targets
-++Microsoft.Common.targets
-++Microsoft.ServiceModel.targets
-++Microsoft.NET.Sdk.DefaultItems.Shared.targets
-++Microsoft.NETCoreSdk.BundledCliTools.props
-++Microsoft.NET.DefaultPackageConflictOverrides.targets
-++Microsoft.CodeAnalysis.NetAnalyzers.props
-++Microsoft.CodeAnalysis.NetAnalyzers.targets
-++Microsoft.NET.ILLink.Tasks.props
-++System.Windows.Forms.Analyzers.props
-++Microsoft.Managed.Core.targets
-++Microsoft.Managed.DesignTime.targets
-++Microsoft.Common.CurrentVersion.targets
-++Microsoft.Managed.Core.CurrentVersions.targets
-++CleanArchitecture.API.csproj.user
-++Microsoft.NET.props
-++Microsoft.CodeAnalysis.targets
-++Microsoft.Xaml.targets
-++Microsoft.WorkflowBuildExtensions.targets
-++Microsoft.TeamTest.targets
-++NuGet.targets
-++Microsoft.Docker.ImportAfter.targets
-++Microsoft.NET.Build.Extensions.targets
-++Microsoft.NuGet.ImportAfter.targets
-++Microsoft.Web.ImportAfter.targets
-++System.Text.Json.targets
-++Microsoft.Extensions.ApiDescription.Server.targets
-++Microsoft.Extensions.Logging.Abstractions.targets
-++Microsoft.Docker.targets
-++Microsoft.Web.IISSupport.targets
-++RegisterModel.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\dtos\registermodel.cs
-++LoginModel.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\dtos\loginmodel.cs
-++LoginDTO.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\dtos\logindto.cs
-++AccountService.cs
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\services\accountservice.cs
+++MovieController.cs
+++appsettings.json
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\appsettings.json
+++appsettings.Development.json
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\appsettings.development.json
+++Program.cs
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\program.cs
+++WeatherForecast.cs
+++No service dependencies discovered
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:>591
+++Microsoft.AspNetCore.Identity (2.2.0)
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>614
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:>1460
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (5.0.4)
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>1399
+++Microsoft.EntityFrameworkCore (7.0.9)
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>609
+++Microsoft.EntityFrameworkCore.Design (7.0.9)
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>613
+++Microsoft.EntityFrameworkCore.SqlServer (7.0.9)
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>611
+++Microsoft.Extensions.Identity.Stores (7.0.12)
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>616
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:>1461
+++Migrations
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\migrations\
+++20230807045103_AddDB.cs
+++20231011165504_update DB.cs
+++DBContextModelSnapshot.cs
+++Repository
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\repository\
 ++AccountRepository.cs
 i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\repository\accountrepository.cs
-++IAccountRepository.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\iaccountrepository.cs
-++Microsoft.AspNet.Identity.Core (2.2.4)
-++Microsoft.AspNetCore.Identity (2.2.0)
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>1413
-++Microsoft.Extensions.Identity.Stores (7.0.12)
-i:{84c6cfee-b632-4816-b536-61d0beee09b5}:>1414
-++IRoleRepository.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\irolerepository.cs
+++MovieRepository.cs
 ++RoleRepository.cs
 i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\repository\rolerepository.cs
-++IUserRepository.cs
-i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\iuserrepository.cs
 ++UserRepository.cs
 i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\repository\userrepository.cs
-++TokenService.cs
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\services\tokenservice.cs
+++DBContext.cs
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\dbcontext.cs
+++20230807045103_AddDB.Designer.cs
+++20231011165504_update DB.Designer.cs
+++CleanArchitecture.Domain
+i:{00000000-0000-0000-0000-000000000000}:CleanArchitecture.Domain
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.domain\cleanarchitecture.domain.csproj
+++DTOs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\dtos\
+++IRepositories
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\
+++IAccountRepository.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\iaccountrepository.cs
+++IMovieRepository.cs
+++IRoleRepository.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\irolerepository.cs
+++IUserRepository.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\iuserrepository.cs
+++IServices
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\iservices\
+++IAccountService.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\iservices\iaccountservice.cs
+++IMovieService.cs
 ++ITokenService.cs
 i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\iservices\itokenservice.cs
+++Models
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\models\
+++Member.cs
+++Movie.cs
+++MovieRental.cs
+++Rental.cs
+++LoginDTO.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\dtos\logindto.cs
+++LoginModel.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\dtos\loginmodel.cs
+++RegisterModel.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\dtos\registermodel.cs
+++Services
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\services\
+++AccountService.cs
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\services\accountservice.cs
+++MovieService.cs
+++TokenService.cs
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\services\tokenservice.cs
 ++Microsoft.IdentityModel.Tokens (7.0.2)
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:>1430
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:>612
 ++System.IdentityModel.Tokens.Jwt (7.0.2)
-i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:>1431
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:>610
+++20231011203925_update.cs
+++20231011203925_update.Designer.cs
+++20231012105616_update on model creating.cs
+++20231012105616_update on model creating.Designer.cs
+++20231012112433_update on model creating 2.cs
+++20231012112433_update on model creating 2.Designer.cs
+++NewFolder
+++Enums
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\enums\
+++UserRole.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\enums\userrole.cs
+++Vacancy.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\models\vacancy.cs
+++VacancyStatus.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\enums\vacancystatus.cs
+++BaseEntity.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\models\baseentity.cs
+++VacancyType.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\enums\vacancytype.cs
+++WorkLocation.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\enums\worklocation.cs
+++20231012131301_AddVacancyTable.cs
+++20231012131301_AddVacancyTable.Designer.cs
+++VacancyRepository.cs
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\repository\vacancyrepository.cs
+++IVacancyRepository.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\irepositories\ivacancyrepository.cs
+++IVacancyService.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\iservices\ivacancyservice.cs
+++VacancyController.cs
+i:{bbb635e0-2543-4972-a667-effac5d8c78a}:d:\projects\cleanarchitecture\cleanarchitecture.api\controllers\vacancycontroller.cs
+++VacancyService.cs
+i:{d175ca87-a1f6-4b95-af4e-4c7adac917c3}:d:\projects\cleanarchitecture\cleanarchitecture.application\services\vacancyservice.cs
+++VacancyDto.cs
+i:{f5a505cb-ecbf-467a-b572-2e1eba673492}:d:\projects\cleanarchitecture\cleanarchitecture.domain\dtos\vacancydto.cs
+++20231012153644_AddIdentityTables.cs
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\migrations\20231012153644_addidentitytables.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\migrations\applicationdbcontextmodelsnapshot.cs
+++20231012153644_AddIdentityTables.Designer.cs
+i:{84c6cfee-b632-4816-b536-61d0beee09b5}:d:\projects\cleanarchitecture\cleanarchitecture.infrastructure\migrations\20231012153644_addidentitytables.designer.cs

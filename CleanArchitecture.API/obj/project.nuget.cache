@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Rjiqb2Xg4P5EoxRejmL7uTU9mUTjYjjvqwlPNAffvTRAPA5RH9L9PGjvgVjDY4bWAoa/OQwojJ1GrSItVT9Cew==",
+  "dgSpecHash": "qTD7c3IaA/S/DnR/c2Zr/J2UnY0m+ddh9zOInJcco8cnURlY0LFMnY/2LQ3b7AWJUt1gEBQJhF6mHksLB2LQIw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\CleanArchitecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Karem Taha\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Karem Taha\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Users\\Karem Taha\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Karem Taha\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.23\\microsoft.aspnetcore.authentication.jwtbearer.6.0.23.nupkg.sha512",
     "C:\\Users\\Karem Taha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.12\\microsoft.aspnetcore.cryptography.internal.7.0.12.nupkg.sha512",
     "C:\\Users\\Karem Taha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.12\\microsoft.aspnetcore.cryptography.keyderivation.7.0.12.nupkg.sha512",
     "C:\\Users\\Karem Taha\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",

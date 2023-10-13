@@ -9,3 +9,4 @@ D:\Projects\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArc
 D:\Projects\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.dll
 D:\Projects\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\ref\CleanArchitecture.Domain.dll
 D:\Projects\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.pdb
+D:\Projects\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.csproj.AssemblyReference.cache

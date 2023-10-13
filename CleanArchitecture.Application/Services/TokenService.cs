@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace CleanArchitecture.Application.Services
 {
@@ -13,7 +14,8 @@ namespace CleanArchitecture.Application.Services
 
         public TokenService()
         {
-            _key = GenerateRandom512BitKey();
+            //_key = GenerateRandom512BitKey();
+            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("BDF4D2DB60514A7592D3B42008EC84A2BDF4D2DB60514A7592D3B42008EC84A2"));
         }
 
         private SymmetricSecurityKey GenerateRandom512BitKey()

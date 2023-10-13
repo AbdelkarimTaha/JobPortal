@@ -16,15 +16,26 @@ namespace API.Controllers
         }
 
         [HttpPost("register")]
-        public Task<bool> Register(RegisterModel model)
+        public async Task<IActionResult> Register(RegisterModel model)
         {
-            return _accountService.Register(model);
+            var result = await _accountService.Register(model);
+            if (result)
+            {
+                return Ok(new { Message = "Registration successful" });
+            }
+            return BadRequest(new { Message = "Registration failed" });
         }
 
         [HttpPost("login")]
-        public Task<LoginDTO> Login(LoginModel model)
+        public async Task<IActionResult> Login(LoginModel model)
         {
-            return _accountService.Login(model);
+            var loginDto = await _accountService.Login(model);
+            if (loginDto != null)
+            {
+                return Ok(loginDto);
+            }
+            return Unauthorized(new { Message = "Login failed" });
         }
+
     }
 }
