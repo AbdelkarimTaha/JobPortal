@@ -1,6 +1,5 @@
 ﻿using CleanArchitecture.Domain.DTOs;
 using CleanArchitecture.Domain.Enums;
-using Microsoft.AspNetCore.Identity;
 
 namespace CleanArchitecture.Domain.Models
 {
@@ -16,6 +15,7 @@ namespace CleanArchitecture.Domain.Models
         public DateTime? ExpiryDate { get; private set; }
         public int? TotalApplications { get; private set; } = 0;
         public int? MaxApplications { get; private set; }
+        public virtual ICollection<UserVacancies> UserVacancies { get; set; }
         private Vacancy()
         {
 
@@ -31,7 +31,9 @@ namespace CleanArchitecture.Domain.Models
             ExpiryDate = vacancyDto.ExpiryDate;
             MaxApplications = vacancyDto.MaxApplications;
             CreatedDate = DateTime.Now;
+            CreatedBy = vacancyDto.CreatedBy;
         }
+
 
         public static Vacancy Create(VacancyPostDto vacancyDto)
         {
@@ -46,14 +48,14 @@ namespace CleanArchitecture.Domain.Models
                 result.Add(new()
                 {
                     Id = vacancy.Id,
-                    CreatedByUser = "",
+                    CreatedByUser = vacancy.CreatedBy,
                     CreatedDate = vacancy.CreatedDate,
                     ExpiryDate = vacancy.ExpiryDate,
                     Field = vacancy.Field,
                     IsActive = vacancy.IsActive,
                     Location = GetEnumDescription((WorkLocation)vacancy.Location),
                     MaxApplications = vacancy.MaxApplications,
-                    ModifiedByUser = "",
+                    ModifiedByUser = vacancy.ModifiedBy,
                     ModifiedDate = vacancy.ModifiedDate,
                     Requirements = vacancy.Requirements,
                     Status = GetEnumDescription((VacancyStatus)vacancy.StatusId),
@@ -66,24 +68,19 @@ namespace CleanArchitecture.Domain.Models
             return result;
         }
 
-        public void UpdateStatus(VacancyStatus status)
-        {
-            StatusId = (int)status;
-        }
-
         public static VacancyGetDto ConvertEntityToModel(Vacancy vacancy)
         {
             return new()
             {
                 Id = vacancy.Id,
-                CreatedByUser = "",
+                CreatedByUser = vacancy.CreatedBy,
                 CreatedDate = vacancy.CreatedDate,
                 ExpiryDate = vacancy.ExpiryDate,
                 Field = vacancy.Field,
                 IsActive = vacancy.IsActive,
                 Location = GetEnumDescription((WorkLocation)vacancy.Location),
                 MaxApplications = vacancy.MaxApplications,
-                ModifiedByUser = "",
+                ModifiedByUser = vacancy.ModifiedBy,
                 ModifiedDate = vacancy.ModifiedDate,
                 Requirements = vacancy.Requirements,
                 Status = GetEnumDescription((VacancyStatus)vacancy.StatusId),
@@ -91,6 +88,15 @@ namespace CleanArchitecture.Domain.Models
                 TotalApplications = vacancy.TotalApplications,
                 VacancyType = GetEnumDescription((VacancyType)vacancy.VacancyTypeId)
             };
+        }
+
+        public void UpdateStatus(int? status)
+        {
+            StatusId = status;
+        }
+        public void IncrementTotalApplications()
+        {
+            ++TotalApplications;
         }
 
         public void UpdateIsActive(bool isActive)
@@ -108,6 +114,16 @@ namespace CleanArchitecture.Domain.Models
             ExpiryDate = vacancyDto.ExpiryDate;
             MaxApplications = vacancyDto.MaxApplications;
             ModifiedDate = DateTime.Now;
+            ModifiedBy = vacancyDto.ModifiedBy;
+        }
+
+        public static VacancyApplicantGetDto ConvertEntityToModel(UserVacancies userVacancy)
+        {
+            return new VacancyApplicantGetDto()
+            {
+                ApplicantName = userVacancy.CreatedBy,
+                CreatedDate = userVacancy.CreatedDate
+            };
         }
         private static string GetEnumDescription(Enum enumValue)
         {

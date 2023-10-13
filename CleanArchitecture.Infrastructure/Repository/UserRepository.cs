@@ -7,10 +7,12 @@ namespace CleanArchitecture.Infrastructure.Repository
     public class UserRepository : IUserRepository
     {
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly ApplicationDbContext _context;
 
-        public UserRepository(UserManager<IdentityUser> userManager)
+        public UserRepository(UserManager<IdentityUser> userManager, ApplicationDbContext context)
         {
             _userManager = userManager;
+            _context = context;
         }
 
 
@@ -30,6 +32,24 @@ namespace CleanArchitecture.Infrastructure.Repository
                     await _userManager.AddToRoleAsync(admin, UserRole.Employer.ToString());
                 }
             }
+        }
+
+        public string GetIdByName(string? userName)
+        {
+            return _context.Users.FirstOrDefault(_ => _.UserName == userName)?.Id;
+        }
+
+        public async Task<IList<string>> GetUserRoleByUserNameAsync(string userName)
+        {
+            var user = await _userManager.FindByNameAsync(userName);
+
+            if (user != null)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                return roles;
+            }
+
+            return null; 
         }
     }
 }

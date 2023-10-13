@@ -4,6 +4,6 @@
     {
         public int? Location { get; set; }
         public int? VacancyType { get; set; }
-        public Guid? CreatedBy { get; set; }
+        public string CreatedBy { get; set; }
     }
 }

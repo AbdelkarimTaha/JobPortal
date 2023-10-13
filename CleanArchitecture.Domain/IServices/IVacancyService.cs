@@ -9,7 +9,9 @@ namespace CleanArchitecture.Domain.IServices
         Task<bool> Update(VacancyPutDto model);
         Task<bool> Create(VacancyPostDto model);
         Task<IEnumerable<VacancyGetDto>> GetAll();
-        Task<bool> Post(Guid id);
-        Task<bool> DeActivate(Guid id);
+        Task<bool> UpdateStatus(VacancyStatusDto VacancyStatusDto);
+        Task<List<VacancyGetDto>> Search(VacancySearchDto vacancySearchDto);
+        Task<string> Apply(Guid id, string? currentUser);
+        Task<List<VacancyApplicantGetDto>> VacancyApplicantsList(Guid id);
     }
 }

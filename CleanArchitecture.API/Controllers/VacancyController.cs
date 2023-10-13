@@ -8,11 +8,10 @@ namespace CleanArchitecture.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     public class VacancyController : ControllerBase
     {
         private readonly IVacancyService _vacancyService;
-
         public VacancyController(IVacancyService vacancyService)
         {
             _vacancyService = vacancyService;
@@ -20,10 +19,13 @@ namespace CleanArchitecture.API.Controllers
 
 
         [HttpPost("Create")]
+        [Authorize(Roles = "Employer")]
         public async Task<IActionResult> Create(VacancyPostDto model)
         {
             if (ModelState.IsValid)
             {
+                model.CreatedBy = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
                 var created = await _vacancyService.Create(model);
                 if (created)
                 {
@@ -38,10 +40,12 @@ namespace CleanArchitecture.API.Controllers
         }
 
         [HttpPut("Update")]
+        [Authorize(Roles = "Employer")]
         public async Task<IActionResult> Update(VacancyPutDto model)
         {
             if (ModelState.IsValid)
             {
+                model.ModifiedBy = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 var updated = await _vacancyService.Update(model);
                 if (updated)
                 {
@@ -56,6 +60,7 @@ namespace CleanArchitecture.API.Controllers
         }
 
         [HttpGet("GetById/{id}")]
+        [Authorize(Roles = "Employer")]
         public async Task<IActionResult> GetById(Guid id)
         {
             var vacancy = await _vacancyService.GetById(id);
@@ -67,6 +72,7 @@ namespace CleanArchitecture.API.Controllers
         }
 
         [HttpGet("GetAll")]
+        [Authorize(Roles = "Employer")]
         public async Task<IActionResult> GetAll()
         {
             var vacancies = await _vacancyService.GetAll();
@@ -78,6 +84,7 @@ namespace CleanArchitecture.API.Controllers
         }
 
         [HttpDelete("Delete/{id}")]
+        [Authorize(Roles = "Employer")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var deleted = await _vacancyService.Delete(id);
@@ -91,80 +98,58 @@ namespace CleanArchitecture.API.Controllers
             }
         }
 
-        [HttpPut("Post/{id}")]
-        public async Task<IActionResult> Post(Guid id)
+        [HttpPut("UpdateStatus")]
+        [Authorize(Roles = "Employer")]
+        public async Task<IActionResult> UpdateStatus(VacancyStatusDto vacancyStatusDto)
         {
-            var posted = await _vacancyService.Post(id);
+            var posted = await _vacancyService.UpdateStatus(vacancyStatusDto);
             if (posted)
             {
-                return Ok(new { Message = "Vacancy posted successfully" });
+                return Ok(new { Message = "Vacancy updated successfully" });
             }
             else
             {
-                return NotFound(new { Message = "Vacancy not found or Posted failed" });
+                return NotFound(new { Message = "Vacancy not found or updated failed" });
             }
         }
 
-        [HttpPut("DeActivate/{id}")]
-        public async Task<IActionResult> DeActivate(Guid id)
+
+        [HttpGet("VacancyApplicantsList/{id}")]
+        [Authorize(Roles = "Employer")]
+        public async Task<IActionResult> VacancyApplicantsList(Guid id)
         {
-            var deActivated = await _vacancyService.DeActivate(id);
-            if (deActivated)
+            var applicants = await _vacancyService.VacancyApplicantsList(id);
+            if (applicants != null)
             {
-                return Ok(new { Message = "Vacancy deactivated successfully" });
+                return Ok(applicants);
             }
-            else
-            {
-                return NotFound(new { Message = "Vacancy not found or deactivated failed" });
-            }
+            return NotFound();
         }
 
-        //[HttpPost("Search")]
-        //public async Task<IActionResult> Search()
-        //{
-        //    var vacancy = await _vacancyService.Search();
-        //    if (vacancy != null)
-        //    {
-        //        return Ok(vacancy);
-        //    }
-        //    return NotFound();
-        //}
-        
-        //[HttpPost("Apply")]
-        //public async Task<IActionResult> Apply()
-        //{
-        //    var vacancy = await _vacancyService.Apply();
-        //    if (vacancy != null)
-        //    {
-        //        return Ok(vacancy);
-        //    }
-        //    return NotFound();
-        //}
 
-
-
-
-        [HttpGet("GetCurrentUser")]
-        public IActionResult GetCurrentUser()
+        [HttpPost("Search")]
+        [Authorize(Roles = "Applicant")]
+        public async Task<IActionResult> Search(VacancySearchDto vacancySearchDto)
         {
-            if (User.Identity.IsAuthenticated)
+            var vacancies = await _vacancyService.Search(vacancySearchDto);
+            if (vacancies != null)
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                var userName = User.Identity.Name;
-                var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+                return Ok(vacancies);
+            }
+            return NotFound();
+        }
 
-                return Ok(new
-                {
-                    UserId = userId,
-                    UserName = userName,
-                    UserEmail = userEmail,
-                    IsAdmin = User.IsInRole("Admin")
-                });
-            }
-            else
+        [HttpPost("Apply/{id}")]
+        [Authorize(Roles = "Applicant")]
+        public async Task<IActionResult> Apply(Guid id)
+        {
+            var currentUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var result = await _vacancyService.Apply(id, currentUser);
+            if (result == "Request applied successfully")
             {
-                return Unauthorized(); // User is not authenticated
+                return Ok(result);
             }
+            return BadRequest(result);
         }
     }
 }

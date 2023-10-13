@@ -1,5 +1,7 @@
-﻿using CleanArchitecture.Domain.IRepositories;
+﻿using CleanArchitecture.Domain.DTOs;
+using CleanArchitecture.Domain.IRepositories;
 using CleanArchitecture.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 namespace CleanArchitecture.Infrastructure.Repository
@@ -16,16 +18,6 @@ namespace CleanArchitecture.Infrastructure.Repository
         public async Task Create(Vacancy vacancy)
         {
             await _context.Vacancies.AddAsync(vacancy);
-            try
-            {
-                await _context.SaveChangesAsync();
-
-            }
-            catch (Exception ex)
-            {
-
-                throw;
-            }
             await _context.SaveChangesAsync();
         }
 
@@ -44,7 +36,60 @@ namespace CleanArchitecture.Infrastructure.Repository
 
         public async Task<Vacancy> GetById(Guid id)
         {
-            return await _context.Vacancies.FindAsync(id);
+            return await _context.Vacancies
+                .Where(v => v.Id == id)
+                .Include(v => v.UserVacancies)
+                .FirstOrDefaultAsync();
+        }
+
+
+        public async Task<List<Vacancy>> SearchAsync(VacancySearchDto vacancySearchDto)
+        {
+            var query = _context.Vacancies.AsQueryable();
+
+            if (vacancySearchDto.Id != null)
+            {
+                query = query.Where(v => v.Id == vacancySearchDto.Id);
+            }
+
+            if (!string.IsNullOrWhiteSpace(vacancySearchDto.Title))
+            {
+                query = query.Where(v => v.Title.ToLower().Contains(vacancySearchDto.Title.ToLower()));
+            }
+
+            if (!string.IsNullOrWhiteSpace(vacancySearchDto.Field))
+            {
+                query = query.Where(v => v.Field.ToLower().Contains(vacancySearchDto.Field.ToLower()));
+            }
+
+            if (!string.IsNullOrWhiteSpace(vacancySearchDto.Requirements))
+            {
+                query = query.Where(v => v.Requirements.ToLower().Contains(vacancySearchDto.Requirements.ToLower()));
+            }
+
+            if (vacancySearchDto.Location != null)
+            {
+                query = query.Where(v => v.Location == vacancySearchDto.Location);
+            }
+
+            if (vacancySearchDto.VacancyType != null)
+            {
+                query = query.Where(v => v.VacancyTypeId == vacancySearchDto.VacancyType);
+            }
+
+            if (vacancySearchDto.Status != null)
+            {
+                query = query.Where(v => v.StatusId == vacancySearchDto.Status);
+            }
+
+            if (vacancySearchDto.ExpiryDate != null)
+            {
+                query = query.Where(v => v.ExpiryDate == vacancySearchDto.ExpiryDate);
+            }
+
+            return await query
+                .AsNoTracking()
+                .ToListAsync();
         }
 
         public async Task Update(Vacancy vacancy)

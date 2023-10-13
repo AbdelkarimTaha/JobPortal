@@ -1,5 +1,5 @@
-﻿using CleanArchitecture.Domain.Models;
-using System.Collections.Generic;
+﻿using CleanArchitecture.Domain.DTOs;
+using CleanArchitecture.Domain.Models;
 
 namespace CleanArchitecture.Domain.IRepositories
 {
@@ -10,5 +10,6 @@ namespace CleanArchitecture.Domain.IRepositories
         public Task Delete(Guid id);
         public Task<Vacancy> GetById(Guid id);
         public Task<IEnumerable<Vacancy>> GetAll();
+        Task<List<Vacancy>> SearchAsync(VacancySearchDto vacancySearchDto);
     }
 }

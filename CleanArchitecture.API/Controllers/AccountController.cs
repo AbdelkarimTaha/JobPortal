@@ -36,6 +36,5 @@ namespace API.Controllers
             }
             return Unauthorized(new { Message = "Login failed" });
         }
-
     }
 }
