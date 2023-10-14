@@ -1,0 +1,25 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+**/obj/**
+**/bin/**
+**/.vs/**
+**/v16/**
+**/suo/**
+**/node_modules/**
+**/.idea/**
+/.idea
+/.v2
+[Dd]ebug/
+[Dd]ebugPublic/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Vv]s
+*.log
+
