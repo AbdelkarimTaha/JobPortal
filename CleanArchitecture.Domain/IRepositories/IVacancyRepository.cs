@@ -11,5 +11,6 @@ namespace CleanArchitecture.Domain.IRepositories
         public Task<Vacancy> GetById(Guid id);
         public Task<IEnumerable<Vacancy>> GetAll();
         Task<List<Vacancy>> SearchAsync(VacancySearchDto vacancySearchDto);
+        List<Vacancy> GetExpiredVacancies();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CleanArchitecture.Domain.DTOs;
+using CleanArchitecture.Domain.Enums;
 using CleanArchitecture.Domain.IRepositories;
 using CleanArchitecture.Domain.Models;
 using Microsoft.EntityFrameworkCore;
@@ -42,6 +43,15 @@ namespace CleanArchitecture.Infrastructure.Repository
                 .FirstOrDefaultAsync();
         }
 
+        public List<Vacancy> GetExpiredVacancies()
+        {
+            var vacancies = _context.Vacancies
+                .AsEnumerable()
+                .Where(_ => _.IsActive == true && _.StatusId == (int)VacancyStatus.Active && _.ExpiryDate.GetValueOrDefault().Date < DateTime.Today.Date)
+                .ToList();
+
+            return vacancies;
+        }
 
         public async Task<List<Vacancy>> SearchAsync(VacancySearchDto vacancySearchDto)
         {

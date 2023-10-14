@@ -3,6 +3,7 @@ using CleanArchitecture.Domain.IRepositories;
 using CleanArchitecture.Domain.IServices;
 using CleanArchitecture.Infrastructure;
 using CleanArchitecture.Infrastructure.Repository;
+using Hangfire;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -62,6 +63,10 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 
                                                         }).AddEntityFrameworkStores<ApplicationDbContext>();
 
+// ConfigureServices method
+builder.Services.AddHangfire(x => x.UseSqlServerStorage(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddHangfireServer();
+
 
 // add db service
 builder.Services.AddDbContext<ApplicationDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection"), _ => _.MigrationsAssembly("CleanArchitecture.Infrastructure")));
@@ -111,6 +116,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IVacancyRepository, VacancyRepository>();
 builder.Services.AddScoped<IVacancyService, VacancyService>();
 builder.Services.AddScoped<IUserVacanciesRepository, UserVacanciesRepository>();
+builder.Services.AddScoped<IRecurringJobService, RecurringJobService>();
 
 
 var app = builder.Build();
@@ -121,6 +127,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseHangfireDashboard();
+app.UseHangfireServer();
+
 
 app.UseHttpsRedirection();
 
@@ -128,5 +137,12 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+BackgroundJob.Enqueue(() => Console.WriteLine("Hello from Hangfire!"));
+
+RecurringJob.AddOrUpdate<IRecurringJobService>(
+            "Archiving Expired Vacancies",
+            x => x.ArchivingExpiredVacancies(),
+            Cron.Daily);
 
 app.Run();
